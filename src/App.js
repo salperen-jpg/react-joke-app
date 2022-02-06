@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Form from './components/Form';
+import Loading from './components/Loading';
+import Modal from './components/Modal';
+import './components/styles/main.scss';
+
+import { useGlobalJokeContext } from './context';
 
 function App() {
+  const { isLoading, modal } = useGlobalJokeContext();
+  if (isLoading) {
+    return <Loading />;
+  }
+  if (modal) {
+    return (
+      <main>
+        <Modal />
+      </main>
+    );
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Form />
+    </main>
   );
 }
 

@@ -1,0 +1,10 @@
+@mixin btn {
+  padding: 0.375rem 0.775rem;
+  border: 1px solid var(--clr-primary);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  cursor: pointer;
+}

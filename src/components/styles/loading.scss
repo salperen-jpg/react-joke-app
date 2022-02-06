@@ -1,0 +1,18 @@
+.loading-container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  border-top-color: blue;
+  animation: spinner 0.6s linear infinite;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

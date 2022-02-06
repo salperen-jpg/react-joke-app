@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave&family=Qahiri&family=Red+Hat+Display&family=Roboto&display=swap');
+
+body {
+  font-family: 'Red Hat Display';
+}
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
+    url('../Utils/bg-1.jpg') center/cover no-repeat;
+  display: grid;
+  place-items: center;
+}
