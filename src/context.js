@@ -40,10 +40,8 @@ export const AppProvider = ({ children }) => {
       setSingleJoke(response.data);
       setIsLoading(false);
       setModal(true);
-      console.log(singleJoke);
     }
     setIsLoading(false);
-    console.log('asdsa');
   };
 
   const toggleError = (show = false, msg = '') => {

@@ -4,8 +4,11 @@ import './styles/modal.scss';
 import { MdClose } from 'react-icons/md';
 
 const Modal = () => {
-  const { modal, singleJoke, closeModal } = useGlobalJokeContext();
-  const { setup, delivery, joke } = singleJoke;
+  const {
+    modal,
+    singleJoke: { setup, delivery, joke },
+    closeModal,
+  } = useGlobalJokeContext();
 
   React.useEffect(() => {
     const timeout = setTimeout(() => {
